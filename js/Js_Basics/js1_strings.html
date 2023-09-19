@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>This is a random Paragraph</p>
+    <div id="id"></div>
+    <div id="exp">Hello World</div>
+
+    <script>
+        let name = 'shivam';
+        let a = name.length;
+        let cName = "Shivam Rajput"
+
+        // This methid of creating string will behave like a object
+        let d = new String("SHIVAM")
+        console.log(d);
+
+        //using dollar sign
+        console.log(`length of this name is ${a}`);
+        console.log(`${name} has a channel called ${cName}`);
+        
+        document.getElementById('id').innerHTML = '<h1>This is a h1 heading</h1>';
+        document.getElementById("exp").innerHTML = `${name} has a channel called ${cName}`;
+
+        // Substring from a string
+        let substr = cName.slice(0,3);
+                // .substring() can take (-ve) values also
+        let sstr = cName.substring(0,3);
+        let sbstr = cName.substr(0,3);
+        console.log(substr);
+        console.log(sbstr);
+        console.log(sstr);
+
+        // Finding occurance of a substring
+        let str = 'This is a string';
+
+        let f = str.indexOf(' is');
+        console.log(f);
+
+        let l = str.lastIndexOf('str')
+        console.log(l);
+
+        // Finding characters of a substring
+        let x = str.charAt(2);
+        console.log(x);
+
+        let y = str.charCodeAt(2);
+        console.log(y);
+
+        // Uppercase to lowercase
+        let ex = "hello";
+        console.log(ex.toUpperCase());
+        console.log(ex.toLowerCase());
+
+        // Replacing elements
+        let replace = cName.replace('Rajput', 'Bhartdwaj');
+        console.log(replace);
+            // Above statement will not replace permanently
+        console.log(cName);
+
+        // Trimming Spaces
+        let ad = '  Shivam';
+        console.log(ad);
+        console.log(ad.trim());
+
+        // Concating a String
+            // rather use '+' than concate
+        console.log(ad.concat(' Warrior'));
+
+
+
+
+    </script>
+
+</body>
+</html>

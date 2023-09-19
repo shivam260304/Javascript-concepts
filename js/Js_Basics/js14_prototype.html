@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prototype and prototypal Environment</h1>
+    <script>
+        let obj =()=>{
+            name="Shivam";
+        }
+
+        let human={
+            canFly: false,
+            canJump: true,
+            canEat: true,
+            canWalk: true,
+            haveEmotions: true,
+            hasFourLegs: false
+        }
+
+        let shivam ={
+            canCode: true,
+            canSolveDsa: true
+        }
+
+        shivam.__proto__ = human;
+        // Go to the server for better understanding
+
+
+    </script>
+    
+</body>
+</html>

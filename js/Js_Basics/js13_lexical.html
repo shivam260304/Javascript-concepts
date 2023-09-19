@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>EXECUTION CONTEXT AND LEXICAL ENVIRONMENT AND CLOSURE</h1>
+    <script>
+        function a(){
+            c();
+            function c(){
+                console.log(b);  // It will check in all lexical environments and at the
+                                    // end it will get b;
+            }
+        }
+        var b =10;    // B is stored in the gl obal scope;
+        a();
+
+
+        // CLOSURE
+        function x(){
+            var a =7;
+            function y(){
+                console.log(a);
+            }
+            return y;    // here we are not calling y but returning it,
+                        //  but instead it will print 7
+        }
+        var z = x();
+        z();
+    </script>
+</body>
+</html>

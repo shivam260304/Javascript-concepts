@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CALLBACK FUNTIONS</h1>
+    <script>
+        const calculate = (a,b,operation) =>{
+            return operation(a,b);
+        }
+
+        let add = (a,b) => a+b;
+        let sub = (a,b) => a-b;
+
+        let addition = calculate(1,2,add);
+        let substraction = calculate(6,5,sub);
+        let multiply = calculate(2,3,(num1, num2)=>{
+            return num1*num2;
+        });
+
+        console.log(addition);
+        console.log(substraction);
+        console.log(multiply);
+    </script>
+</body>
+</html>

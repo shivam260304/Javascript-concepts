@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events handling and Event Listeners</h1>
+
+    <!-- Inline Event handling -->
+    <input type="text" id ="xyz"onmouseover="alert('Thi is a message')">
+
+    <!-- Event handling by creating a funtion -->
+    <div class="container">
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nesciunt cumque, at amet aspernatur vitae harum consectetur. Aut, voluptatibus necessitatibus!</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+    <script>
+        function toggleHide(){
+            let a = document.getElementById('btn');
+            let b = document.getElementById('para');
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+
+    // Adding Event Listener
+        let p = document.getElementById('para');
+        p.addEventListener('mouseover', function a(){
+            console.log('Mouse inside');
+        });
+        // other way of writing a funtion 
+        p.addEventListener('mouseout', ()=>{
+            console.log('Mouse outside');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays and Object</h1>
+    <script>
+        // CREATING A BASIC OBJECT
+        let employee = {
+            name: "Shivam",
+            salary : 10,
+            channel: "codeWithHarry"
+        }
+        console.log(employee);
+
+        // CREATING A BASIC ARRAY
+        let name = [26,1 ,2,"Shivam"];
+        name = name.sort();  //sorting an array
+        // name = name.reverse();
+        console.log(name);
+
+        // CREATING AN ARRAY OBJECT
+        let names = new Array(26,24,'Pushkar'); 
+        console.log(names);
+        let n = new Array(26);  // Here 26 will declare 26 empty spaces
+        console.log(n);
+
+        // ARRAY BASIC FUNCTIONS
+        let arr = [1,2,-2,3,-5];
+
+        let fn = (num) =>{
+            return num<0;
+        }
+
+        let res =arr.find(fn);    // EXAMPLES OF CALLBACK FUNCTIONS
+        let fn2 = arr.findIndex(fn);
+        console.log(res);
+        console.log(fn2);
+
+        // var a =[1,2,3,4];
+        // var b = a;       //This is passing reference
+        // var b =[...a];      // This is copying a in b
+        // console.log(b);
+    </script>
+</body>
+</html>

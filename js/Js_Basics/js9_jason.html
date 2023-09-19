@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Working with Jason</h1>
+    <h2>Converting object to string (stringyfy)</h2>
+    <h2>onverting strings to object (parse)</h2>
+
+    <script>
+
+        let obj ={
+        name: 'shivam',
+        channel : 'cwh',
+        friend : 'Rohan Das',
+        food : 'bhindi'
+    }
+    console.log(obj);
+
+    //  CONVERTING AN OBJECT TO STRING
+    let stringify = JSON.stringify(obj);
+    console.log(stringify);
+
+    //  REPLACING AN ELEMENT  (only applicable to strings not to an object)
+    stringify = stringify.replace('shivam','Hivam');
+    console.log(stringify);
+
+    //  CONVERTING A STRING TO OBJECT
+    stringify = JSON.parse(stringify);
+    console.log(stringify);
+    </script>
+</body>
+</html>

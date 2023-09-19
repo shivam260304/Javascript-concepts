@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Interactions</h1>
+    <script>
+    // 1 ALERT (alert can't return anythinh)
+        alert("This is a message");
+
+    // 2 PROMPT  (always give a default value to the prompt to verify all browsers can run it)
+        let name = prompt("Enter your name","guests");
+        console.log(name);
+
+    // 3  CONFIRM
+        let deletPost = confirm("Do you really want to delet your post");
+        // console.log(deletPost);   //(This will print true)
+
+        if(deletPost){
+            console.log('Your Post has been deleted');
+        }
+        else{
+            console.log('Your Post has not been deleted');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loops in Javascript</h1>
+    <script>
+    // Do-While LOOPS
+        let i =1;
+        do{
+            console.log(i);
+            i++;
+        }
+        while(i<4);
+
+    // WHILE LOOPS
+        let j =4;
+        while (j<8) {
+            console.log(j);
+            j++;
+        }
+
+    // FOR LOOPS
+        let name = ['Shivam','pushkar','aman','abhishek'];
+        // for (let index = 0; index < name.length; index++) {
+        //   console.log(name[index]);
+        // }
+
+    // FOR EACH LOOPS   
+        // name.forEach((element) =>{
+        //     console.log(element);
+        // })
+
+    // FOR OF LOOPS  ((easy way) --> behaves like forEach)
+        for (element of name) {
+            console.log(element);
+        }
+
+        // Iterating in an Object
+        let employee ={
+            name : 'shivam',
+            salary : 2,
+            role : 'sde'
+        }
+
+        // FOR IN LOOPS   (These are used to iterate in an Object)
+        for (element in employee){
+            console.log(`The ${element} of the employee is ${employee[element]}`);
+        }
+
+
+    </script>
+</body>
+</html>
